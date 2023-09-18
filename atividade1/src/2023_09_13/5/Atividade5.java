@@ -27,5 +27,6 @@ public class Atividade5 {
         funcionario.imprimirPagamentoFuncionario();
 
         input.close();
+        // funcionario.close();
     }
 }

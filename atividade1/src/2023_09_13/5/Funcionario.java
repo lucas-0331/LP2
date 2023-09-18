@@ -14,8 +14,8 @@ public class Funcionario {
     }
 
     public void imprimirPagamentoFuncionario() {
-        System.out.printf("\nID Funcionario:.................. %.2f R$\n", idFuncionario);
-        System.out.printf("Nome do Funcionario.............. %.2f R$\n", nomeFuncionario);
+        System.out.printf("\nID Funcionario:.................. %d\n", idFuncionario);
+        System.out.printf("Nome do Funcionario.............. %s\n", nomeFuncionario);
         System.out.printf("Valor por Hora:.................. %.2f R$\n", valorHoraTrabalhada);
         System.out.printf("Quantidade de Hora Trabalhada:... %.2f R$\n", horaTrabalhada);
         System.out.printf("Salario:......................... %.2f R$\n", salarioFuncionario);

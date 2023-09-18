@@ -10,11 +10,11 @@ public class Atividade4 {
         Scanner input = new Scanner(System.in);
 
         int quantidadeFuncionario = 2;
-        int tamanho = 5;
-        int[] idFuncionario = new int[tamanho];
-        Double[] horaTrabalhada = new Double[tamanho];
-        Double[] valorHoraTrabalhada = new Double[tamanho];
-        Double[] salarioFuncionario = new Double[tamanho];
+        int tamanhoVetor = 5;
+        int[] idFuncionario = new int[tamanhoVetor];
+        Double[] horaTrabalhada = new Double[tamanhoVetor];
+        Double[] valorHoraTrabalhada = new Double[tamanhoVetor];
+        Double[] salarioFuncionario = new Double[tamanhoVetor];
 
         for(int i = 0; i < quantidadeFuncionario; i++) {
             System.out.printf("ID do Funcionario %d: ", i + 1);

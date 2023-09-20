@@ -1,14 +1,16 @@
 public class Funcionario {
     public String nomeFuncionario;
     public int idFuncionario;
-    public double horaTrabalhada;
+    public int horaTrabalhada;
+    public int minutoTrabalhado;
     public double valorHoraTrabalhada;
     public double salarioFuncionario;
 
-    public Funcionario(String nomeFuncionario, int idFuncionario, double horaTrabalhada, double valorHoraTrabalhada, double salarioFuncionario) {
+    public Funcionario(String nomeFuncionario, int idFuncionario, int horaTrabalhada, int minutoTrabalhado, double valorHoraTrabalhada, double salarioFuncionario) {
         this.nomeFuncionario = nomeFuncionario;
         this.idFuncionario = idFuncionario;
         this.horaTrabalhada = horaTrabalhada;
+        this.minutoTrabalhado = minutoTrabalhado;
         this.valorHoraTrabalhada = valorHoraTrabalhada;
         this.salarioFuncionario = salarioFuncionario;
     }
@@ -17,7 +19,7 @@ public class Funcionario {
         System.out.printf("\nID Funcionario:.................. %d\n", idFuncionario);
         System.out.printf("Nome do Funcionario.............. %s\n", nomeFuncionario);
         System.out.printf("Valor por Hora:.................. %.2f R$\n", valorHoraTrabalhada);
-        System.out.printf("Quantidade de Hora Trabalhada:... %.2f R$\n", horaTrabalhada);
+        System.out.printf("Quantidade de Hora Trabalhada:... %d:%d Hr(s)\n", horaTrabalhada, minutoTrabalhado);
         System.out.printf("Salario:......................... %.2f R$\n", salarioFuncionario);
     }
 
@@ -37,11 +39,11 @@ public class Funcionario {
         this.idFuncionario = idFuncionario;
     }
 
-    public double getHoraTrabalhada() {
+    public int getHoraTrabalhada() {
         return horaTrabalhada;
     }
 
-    public void setHoraTrabalhada(double horaTrabalhada) {
+    public void setHoraTrabalhada(int horaTrabalhada) {
         this.horaTrabalhada = horaTrabalhada;
     }
 
@@ -59,5 +61,13 @@ public class Funcionario {
 
     public void setSalarioFuncionario(double salarioFuncionario) {
         this.salarioFuncionario = salarioFuncionario;
+    }
+
+    public int getMinutoTrabalhado() {
+        return minutoTrabalhado;
+    }
+
+    public void setMinutoTrabalhado(int minutoTrabalhado) {
+        this.minutoTrabalhado = minutoTrabalhado;
     }
 }

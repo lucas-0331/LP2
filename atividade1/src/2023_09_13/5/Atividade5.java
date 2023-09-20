@@ -15,14 +15,19 @@ public class Atividade5 {
         String nomeFuncionario = input.next();
 
         System.out.print("Quantas horas trabalhadas: ");
-        double horaTrabalhada = input.nextDouble();
+        int horaTrabalhada = input.nextInt();
+
+        System.out.print("Quantos minutos trabalhos: ");
+        int minutoTrabalhado = input.nextInt();
 
         System.out.print("Valor da hora: ");
         double valorHoraTrabalhada = input.nextDouble();
 
         double salarioFuncionario = valorHoraTrabalhada * horaTrabalhada;
 
-        Funcionario funcionario = new Funcionario(nomeFuncionario, idFuncionario, horaTrabalhada, valorHoraTrabalhada, salarioFuncionario);
+        salarioFuncionario += (valorHoraTrabalhada / 60) * minutoTrabalhado;
+
+        Funcionario funcionario = new Funcionario(nomeFuncionario, idFuncionario, horaTrabalhada, minutoTrabalhado, valorHoraTrabalhada, salarioFuncionario);
 
         funcionario.imprimirPagamentoFuncionario();
 
